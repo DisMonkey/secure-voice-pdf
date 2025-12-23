@@ -14,7 +14,7 @@ if "GOOGLE_API_KEY" not in st.secrets:
     st.stop()
 
 genai.configure(api_key=st.secrets["GOOGLE_API_KEY"])
-model = genai.GenerativeModel('gemini-1.5-flash-latest')
+model = genai.GenerativeModel('gemini-2.5-flash')
 
 # --- ARCHITECTED UTILITIES ---
 def get_audio_html(text):
